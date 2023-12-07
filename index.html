@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <div class="container1">
+      <header>
+        <img src="assets/ham.png" alt="" /> <span>Contact Us</span>
+      </header>
+      <div class="home">
+        <img src="assets/Logo.png" alt="" />
+        <p>
+          <l>TODAYTRIPZY</l> is a website for help peoples who's facing issues
+          for picking their daily food routine. <l>TODAYTRIPZY</l> will help
+          people to choose their dish by a random dish generator or can pick a
+          dish from our thousands of listed dishes just by clicking on
+          appropriate catogaries..
+        </p>
+      </div>
+      <div id="searchbox">
+        <input
+          type="text"
+          id="search" oninput="getValue()"
+          onclick="document.getElementById('searchresult').style.display='block'"
+          name="search"
+          placeholder="Ex:seafood, chicken, beef.."
+        />
+        <button id="searchbutton">
+          search
+        </button>
+      </div>
+    </div>
+    <div class="container2">
+      <div>
+        <h2>Today's Pick</h2>
+        <div id="random" onclick="changingvisibility()"></div>
+
+        <div class="container2.1">
+        <span><h2 id="on" style="display: none;" >Ingredients</h2>
+        <img id="closebutton" onclick="closeModal()" src="assets/close.png"  style="display: none;"></span>
+        <div id="modal" class="modal" >
+          <div class="modal-content">
+            
+            <ul id="ingredientList"></ul>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <div class="searchresult">
+        <p id="searchresult" style="display: none;">Search results:</p>
+        <div onclick="changingvisibility()" id="categoriesdisplay"></div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

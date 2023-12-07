@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+}
+.container1{
+    background-image: url(assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+}
+l{
+    color: #da882c;
+}
+.container2 {
+    background: linear-gradient(to bottom, #da882c, #ffffff);
+    height: 100vh;
+    color: white;
+}
